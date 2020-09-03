@@ -1,25 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { MDBRow, MDBCol, MDBBox } from 'mdbreact';
+
+import './assets/scss/style.scss';
+import SideMenu from './components/sidemenu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MDBBox className="page" fluid="true">
+      <MDBRow className="h-100">
+        <div className="menuside__width z-depth-1-half position-fixed">
+          <MDBBox tag="div" className="h-100 menuside__box">
+            <SideMenu />
+          </MDBBox>
+        </div>
+        <MDBCol className="container-right">
+          <MDBRow className="navcontainer">
+            <MDBCol size="12">
+              <MDBBox tag="div" bgColor="warning" className="h-100">
+                nav
+              </MDBBox>
+            </MDBCol>
+          </MDBRow>
+          <MDBRow className="h-100">
+            <MDBCol size="12">
+              <MDBBox tag="div" bgColor="success" className="h-100">
+                content
+              </MDBBox>
+            </MDBCol>
+          </MDBRow>
+        </MDBCol>
+      </MDBRow>
+    </MDBBox>
   );
 }
 

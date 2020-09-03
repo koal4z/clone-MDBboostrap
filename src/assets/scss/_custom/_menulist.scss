@@ -1,0 +1,23 @@
+.menu-side__menu {
+  &--list {
+    background-color: transparent !important;
+  }
+  &--items {
+    background-color: transparent !important;
+    border: none !important;
+  }
+  &--name {
+    color: #000000;
+    font-weight: bolder;
+  }
+
+  &--down {
+  }
+
+  &--list,
+  &--items,
+  &--name,
+  &--down {
+    font-size: 1.2rem;
+  }
+}

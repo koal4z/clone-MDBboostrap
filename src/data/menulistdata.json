@@ -1,0 +1,24 @@
+{
+  "menuList": [
+    {
+      "icon": "<i className=\"far fa-gem\"></i>",
+      "name": "MDB Pro",
+      "isDropDown": false
+    },
+    {
+      "icon": "<i className=\"fas fa-gem\"></i>",
+      "name": "Products",
+      "isDropDown": false
+    },
+    {
+      "icon": "<i className=\"fas fa-download\"></i>",
+      "name": "Getting Started",
+      "isDropDown": true
+    },
+    {
+      "icon": "<i className=\"fas fa-th-large\"></i>",
+      "name": "Layout",
+      "isDropDown": true
+    }
+  ]
+}

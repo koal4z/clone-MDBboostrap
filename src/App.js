@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MDBRow, MDBCol, MDBBox } from 'mdbreact';
 
 import './assets/scss/style.scss';
@@ -6,6 +6,20 @@ import SideMenu from './components/sidemenu';
 import Navbar from './components/navbar';
 
 function App() {
+  const handlerScroll = () => {
+    let yOffset = window.scrollY;
+    const navbarEl = document.querySelector('.navcontainer');
+    if (yOffset > 65) {
+      navbarEl.classList.add('decrease_nav');
+    } else {
+      navbarEl.classList.remove('decrease_nav');
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handlerScroll);
+  }, []);
+
   return (
     <MDBBox className="page" fluid="true">
       <MDBRow className="h-100">
@@ -24,7 +38,7 @@ function App() {
           </MDBRow>
           <MDBRow className="h-100">
             <MDBCol size="12">
-              <MDBBox tag="div" className="h-100">
+              <MDBBox tag="div" className="contentcontainer h-100">
                 content
               </MDBBox>
             </MDBCol>

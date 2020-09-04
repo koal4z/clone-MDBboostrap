@@ -12,9 +12,20 @@ const MenuItems = () => {
     const parentEl = el.parentNode;
     const angleIcon = el.querySelector('.fa-angle-down');
     const boxDrop = parentEl.querySelector('.menu-side__menu--down-box');
-    angleIcon.classList.toggle('rotate-icon-top');
-    boxDrop.classList.toggle('active-drop');
-    setClickDown(!clickDown);
+    const allAngleIcon = document.querySelectorAll('.fa-angle-down');
+    const allBoxDrop = Array.from(
+      document.querySelectorAll('.menu-side__menu--down-box')
+    );
+    if (angleIcon && boxDrop) {
+      if (!boxDrop.classList.contains('active-drop')) {
+        allBoxDrop.forEach((el) => el.classList.remove('active-drop'));
+        allAngleIcon.forEach((el) => el.classList.remove('rotate-icon-top'));
+      }
+
+      angleIcon.classList.toggle('rotate-icon-top');
+      boxDrop.classList.toggle('active-drop');
+      setClickDown(!clickDown);
+    }
   };
 
   return (

@@ -3,7 +3,6 @@ import { MDBListGroupItem, MDBBox } from 'mdbreact';
 
 const MenuItem = (props) => {
   const { icon, name, isDown, clickDown } = props;
-
   return (
     <MDBListGroupItem
       className="menu-side__menu--items"

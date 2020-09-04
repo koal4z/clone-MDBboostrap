@@ -7,7 +7,19 @@
 }
 
 .navcontainer {
-  height: 7%;
+  height: 7rem;
+  position: fixed;
+  width: calc(100% - 21.8rem);
+  z-index: 99;
+  transition: height 0.64s linear;
+}
+
+.decrease_nav {
+  height: 5rem;
+}
+
+.contentcontainer {
+  margin-top: 7rem;
 }
 
 .menuside__box {

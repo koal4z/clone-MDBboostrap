@@ -5,6 +5,10 @@
       rgba($color-white, 0.9) 35%,
       rgba($color-white, 0.8) 80%
     );
+
+    position: relative;
+    overflow: hidden;
+    box-shadow: 6px 7px 40px -4px rgba(0, 0, 0, 0.2);
   }
 
   &__logo {

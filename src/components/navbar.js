@@ -18,7 +18,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 const Navbar = () => {
   return (
     <Router>
-      <MDBNavbar color="white" expand="md" className="h-100">
+      <MDBNavbar color="white" expand="md" className="h-100 nav__box">
         <MDBNavbarNav left>
           <MDBNavItem active>
             <MDBBtn color="info" className="nav__btn">

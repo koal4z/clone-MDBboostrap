@@ -21,7 +21,10 @@
 
   &--down-box {
     background-color: rgba(#424242, 0.13);
-    display: none;
+    display: block;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.1s;
   }
 
   &--down-items {
@@ -45,11 +48,8 @@
 }
 
 .active-drop {
-  display: block;
-}
-
-.rotate-icon-down {
-  transform: rotate(0deg);
+  overflow: visible;
+  height: 100%;
 }
 
 .rotate-icon-top {
@@ -58,4 +58,8 @@
 
 .fa-angle-down:not(.rotate-icon-down) {
   transition: all 0.18s linear;
+}
+
+.fa-angle-down:not(.rotate-icon-top) {
+  transition: none;
 }

@@ -1,15 +1,18 @@
 .menu-side {
   &__container {
-    background-color: rgba($color-white, 0.8);
+    background: linear-gradient(
+      180deg,
+      rgba($color-white, 0.9) 35%,
+      rgba($color-white, 0.8) 80%
+    );
   }
 
   &__logo {
     &--box {
-      height: 9rem;
+      height: 8rem;
       background-color: $color-white;
       border-bottom: solid 1px rgba($color-border-line, 0.3);
     }
-
     &--link {
       display: flex;
       align-content: stretch;
@@ -28,16 +31,19 @@
   }
 
   &__search {
+    border-bottom: 1px solid rgba($color-border-line, 0.3);
     &--input {
       margin: 0 !important;
       font-size: 1.6rem !important;
       font-weight: lighter !important;
       padding-left: 2rem !important;
       background-color: $color-white !important;
+      border-bottom: 0 !important;
       &:active,
       &:focus {
-        border-bottom: none !important;
+        border-bottom: 0 !important;
         margin: 0 !important;
+        outline: none !important;
       }
 
       &::placeholder {

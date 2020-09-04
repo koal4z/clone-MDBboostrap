@@ -1,23 +1,99 @@
 {
   "menuList": [
     {
-      "icon": "<i className=\"far fa-gem\"></i>",
+      "icon": "far fa-gem",
       "name": "MDB Pro",
       "isDropDown": false
     },
     {
-      "icon": "<i className=\"fas fa-gem\"></i>",
+      "icon": "fas fa-gem",
       "name": "Products",
       "isDropDown": false
     },
     {
-      "icon": "<i className=\"fas fa-download\"></i>",
+      "icon": "fas fa-download",
       "name": "Getting Started",
       "isDropDown": true
     },
     {
-      "icon": "<i className=\"fas fa-th-large\"></i>",
+      "icon": "fas fa-th-large",
       "name": "Layout",
+      "isDropDown": true
+    },
+    {
+      "icon": "fas fa-object-ungroup",
+      "name": "Utilities",
+      "isDropDown": true
+    },
+    {
+      "icon": "fas fa-indent",
+      "name": "Content",
+      "isDropDown": true
+    },
+    {
+      "icon": "fab fa-css3",
+      "name": "CSS",
+      "isDropDown": true
+    },
+    {
+      "icon": "fas fa-cubes",
+      "name": "Components",
+      "isDropDown": true
+    },
+    {
+      "icon": "fas fa-code",
+      "name": "JavaScript",
+      "isDropDown": true
+    },
+    {
+      "icon": "fas fa-bars",
+      "name": "Navigation",
+      "isDropDown": true
+    },
+    {
+      "icon": "fas  fa-edit",
+      "name": "Forms",
+      "isDropDown": true
+    },
+    {
+      "icon": "fas fa-table",
+      "name": "Tables",
+      "isDropDown": true
+    },
+    {
+      "icon": "fas  fa-window-restore",
+      "name": "Modals",
+      "isDropDown": true
+    },
+    {
+      "icon": "fas fa-th",
+      "name": "Design Blocks",
+      "isDropDown": false
+    },
+    {
+      "icon": "fas fa-book",
+      "name": "Tutorials",
+      "isDropDown": true
+    },
+    {
+      "icon": "fas fa-plus-square",
+      "name": "Plugins & Addons",
+      "isDropDown": false
+    },
+    {
+      "icon": "fas fa-image",
+      "name": "Free templates",
+      "isDropDown": false
+    },
+    {
+      "icon": "fas fa-certificate",
+      "name": "Expert Kits",
+      "isDropDown": false,
+      "isNew": true
+    },
+    {
+      "icon": "fas fa-puzzle-piece",
+      "name": "Tools & Resources",
       "isDropDown": true
     }
   ]

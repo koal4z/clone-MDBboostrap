@@ -3,6 +3,7 @@ import { MDBRow, MDBCol, MDBBox } from 'mdbreact';
 
 import './assets/scss/style.scss';
 import SideMenu from './components/sidemenu';
+import Navbar from './components/navbar';
 
 function App() {
   return (
@@ -14,16 +15,16 @@ function App() {
           </MDBBox>
         </div>
         <MDBCol className="container-right">
-          <MDBRow className="navcontainer">
+          <MDBRow className="navcontainer .z-depth-3">
             <MDBCol size="12">
-              <MDBBox tag="div" bgColor="warning" className="h-100">
-                nav
+              <MDBBox tag="div" className="h-100">
+                <Navbar />
               </MDBBox>
             </MDBCol>
           </MDBRow>
           <MDBRow className="h-100">
             <MDBCol size="12">
-              <MDBBox tag="div" bgColor="success" className="h-100">
+              <MDBBox tag="div" className="h-100">
                 content
               </MDBBox>
             </MDBCol>

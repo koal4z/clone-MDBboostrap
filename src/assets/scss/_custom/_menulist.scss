@@ -5,19 +5,57 @@
   &--items {
     background-color: transparent !important;
     border: none !important;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(1, 0.26, 0.64, 0.86);
+    user-select: none;
+
+    &:hover {
+      background-color: rgba($color-border-line, 0.1) !important;
+    }
   }
+
   &--name {
     color: #000000;
     font-weight: bolder;
   }
 
-  &--down {
+  &--down-box {
+    background-color: rgba(#424242, 0.13);
+    display: none;
+  }
+
+  &--down-items {
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.26s cubic-bezier(1, 0.26, 0.64, 0.86);
+    user-select: none;
+
+    &:hover {
+      background-color: rgba($color-white, 0.25);
+      color: $color-primary;
+    }
   }
 
   &--list,
   &--items,
   &--name,
-  &--down {
+  &--icon-down {
     font-size: 1.2rem;
   }
+}
+
+.active-drop {
+  display: block;
+}
+
+.rotate-icon-down {
+  transform: rotate(0deg);
+}
+
+.rotate-icon-top {
+  transform: rotate(180deg);
+}
+
+.fa-angle-down:not(.rotate-icon-down) {
+  transition: all 0.18s linear;
 }

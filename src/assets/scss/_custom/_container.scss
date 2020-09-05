@@ -1,0 +1,68 @@
+.container {
+  &__background {
+    padding: 0 22rem;
+    margin-top: 2rem;
+  }
+
+  &__alert {
+    & > * > i {
+      font-size: 4rem;
+    }
+
+    &--text {
+      margin: 0 1rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    &--button {
+      font-size: 1.2rem !important;
+      font-weight: 700 !important;
+    }
+  }
+}
+
+.release__box {
+  border: 0.2rem solid #7446ac;
+}
+
+.release__text {
+  font-size: 1.8rem;
+}
+
+.icon__check {
+  color: #7446ac;
+}
+
+.release__btn {
+  font-size: 1rem !important;
+}
+
+.card {
+  &__typo {
+    &--head {
+      text-align: center;
+    }
+    &--detail {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $color-grey-dark;
+    }
+    &--link {
+      color: $color-grey-dark;
+    }
+    &--link:hover {
+      color: $color-grey-dark;
+    }
+  }
+
+  &__btnBox {
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    &--btn {
+      font-size: 1.2rem !important;
+    }
+  }
+}

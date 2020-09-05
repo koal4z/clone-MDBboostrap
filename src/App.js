@@ -4,6 +4,7 @@ import { MDBRow, MDBCol, MDBBox } from 'mdbreact';
 import './assets/scss/style.scss';
 import SideMenu from './components/sidemenu';
 import Navbar from './components/navbar';
+import Home from './components/home';
 
 function App() {
   const handlerScroll = () => {
@@ -21,8 +22,8 @@ function App() {
   }, []);
 
   return (
-    <MDBBox className="page" fluid="true">
-      <MDBRow className="h-100">
+    <MDBBox className="page h-auto" fluid="true">
+      <MDBRow>
         <div className="menuside__width z-depth-1-half position-fixed">
           <MDBBox tag="div" className="h-100 menuside__box">
             <SideMenu />
@@ -36,10 +37,10 @@ function App() {
               </MDBBox>
             </MDBCol>
           </MDBRow>
-          <MDBRow className="h-100">
+          <MDBRow>
             <MDBCol size="12">
-              <MDBBox tag="div" className="contentcontainer h-100">
-                content
+              <MDBBox tag="div" className="contentcontainer">
+                <Home />
               </MDBBox>
             </MDBCol>
           </MDBRow>

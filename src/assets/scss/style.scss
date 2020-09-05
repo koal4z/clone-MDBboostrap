@@ -1,9 +1,11 @@
 // Your custom styles
 @import './custom-variables';
 
-@import './_custom/index.scss';
-@import './_custom/App.scss';
-@import './_custom/menu.scss';
-@import './_custom/menulist.scss';
+@import './_custom/index';
+@import './_custom/App';
+@import './_custom/menu';
+@import './_custom/menulist';
 @import './_custom/button';
 @import './_custom/nav';
+@import './_custom/header';
+@import './_custom/container';

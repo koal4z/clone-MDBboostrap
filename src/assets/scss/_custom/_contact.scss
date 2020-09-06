@@ -1,0 +1,41 @@
+.contact__box {
+  padding: 1.8rem 0;
+  background-color: #0099cc;
+}
+
+.contact__button--box {
+  display: inline-flex;
+}
+
+.contact__btn--items {
+  border: 1.5px solid $color-white;
+  color: $color-white;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  padding: 0.8rem 1.4rem;
+  border-radius: 4px;
+  font-family: $font-primary;
+  letter-spacing: 0.92px;
+  margin-right: 2.5rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white;
+  }
+}
+
+.contact__icon--box {
+  display: inline-flex;
+}
+.contact__icon--links {
+  margin-right: 2.5rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.contact__icon--items {
+  font-size: 1.8rem;
+  color: $color-white;
+}

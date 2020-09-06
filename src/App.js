@@ -8,7 +8,7 @@ import Home from './components/home';
 
 function App() {
   const handlerScroll = () => {
-    let yOffset = window.scrollY;
+    const yOffset = window.scrollY;
     const navbarEl = document.querySelector('.navcontainer');
     if (yOffset > 65) {
       navbarEl.classList.add('decrease_nav');

@@ -22,7 +22,8 @@
     "strict": ["error", "global"],
     "curly": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
-    "linebreak-style": ["error", "windows"],
-    "comma-dangle": ["error", "never"]
+    "linebreak-style": ["off", "windows"],
+    "comma-dangle": ["error", "never"],
+    "object-curly-newline": ["error", { "multiline": true }]
   }
 }

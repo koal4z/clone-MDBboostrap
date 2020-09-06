@@ -21,7 +21,7 @@ const FourCard = () => {
               <MDBCardImage
                 src={data.image}
                 alt={data.header.split(' ')[1]}
-                className="img-fluid "
+                className="img-fluid"
               ></MDBCardImage>
             </MDBBox>
             <MDBBox>

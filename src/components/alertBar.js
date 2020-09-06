@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBBox, MDBBtn, MDBTypography } from 'mdbreact';
+import { MDBBox, MDBBtn } from 'mdbreact';
 
 const AlertBar = () => {
   return (

@@ -1,0 +1,22 @@
+.copyright__box {
+  background-color: #161c27;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.copyright__text {
+  color: rgba($color-white, 0.6);
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.copyright__link {
+  color: $color-white;
+  font-weight: 500;
+
+  &:hover {
+    color: $color-white;
+  }
+}

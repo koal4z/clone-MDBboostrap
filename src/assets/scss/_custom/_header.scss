@@ -1,12 +1,13 @@
 .header {
   &__container {
-    height: 14.5rem;
+    height: 21.5rem;
   }
   &__box {
     background-color: rgba($color-dark, 0.2);
     height: 100%;
 
     &--title {
+      padding-top: 7rem;
       font-weight: 700;
       font-size: 3rem;
     }

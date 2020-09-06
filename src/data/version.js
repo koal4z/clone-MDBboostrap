@@ -1,4 +1,4 @@
-export const datas = [
+const datas = [
   {
     image:
       'https://mdbootstrap.com/img/Marketing/general/jquery-presentation-wide.png',
@@ -31,3 +31,5 @@ export const datas = [
     color: 'success'
   }
 ];
+
+export default datas;

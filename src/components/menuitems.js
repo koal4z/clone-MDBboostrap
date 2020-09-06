@@ -18,8 +18,8 @@ const MenuItems = () => {
     );
     if (angleIcon && boxDrop) {
       if (!boxDrop.classList.contains('active-drop')) {
-        allBoxDrop.forEach((el) => el.classList.remove('active-drop'));
-        allAngleIcon.forEach((el) => el.classList.remove('rotate-icon-top'));
+        allBoxDrop.forEach((box) => box.classList.remove('active-drop'));
+        allAngleIcon.forEach((icon) => icon.classList.remove('rotate-icon-top'));
       }
 
       angleIcon.classList.toggle('rotate-icon-top');
@@ -30,41 +30,39 @@ const MenuItems = () => {
 
   return (
     <MDBListGroup className="menu-side__menu--list">
-      {menuitemsData.menuList.map((data) => {
-        return (
-          <MDBContainer className="p-0" key={data.name}>
-            <MenuItem
-              icon={data.icon}
-              name={data.name}
-              isDown={data.isDropDown}
-              clickDown={handlerDown}
-              isClickDown={clickDown}
-            />
-            {data.isDropDown ? (
-              <MDBBox key={data.name} className="menu-side__menu--down-box">
-                <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
-                  item1
-                </MDBBox>
-                <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
-                  item1
-                </MDBBox>
-                <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
-                  item1
-                </MDBBox>
-                <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
-                  item1
-                </MDBBox>
-                <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
-                  item1
-                </MDBBox>
-                <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
-                  item1
-                </MDBBox>
+      {menuitemsData.menuList.map((data) => (
+        <MDBContainer className="p-0" key={data.name}>
+          <MenuItem
+            icon={data.icon}
+            name={data.name}
+            isDown={data.isDropDown}
+            clickDown={handlerDown}
+            isClickDown={clickDown}
+          />
+          {data.isDropDown ? (
+            <MDBBox key={data.name} className="menu-side__menu--down-box">
+              <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
+                item1
               </MDBBox>
-            ) : null}
-          </MDBContainer>
-        );
-      })}
+              <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
+                item1
+              </MDBBox>
+              <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
+                item1
+              </MDBBox>
+              <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
+                item1
+              </MDBBox>
+              <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
+                item1
+              </MDBBox>
+              <MDBBox className="pl-5 py-2 menu-side__menu--down-items">
+                item1
+              </MDBBox>
+            </MDBBox>
+          ) : null}
+        </MDBContainer>
+      ))}
     </MDBListGroup>
   );
 };

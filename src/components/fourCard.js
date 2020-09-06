@@ -9,7 +9,7 @@ import {
   MDBBtn
 } from 'mdbreact';
 
-import { datas } from '../data/version';
+import datas from '../data/version';
 
 const FourCard = () => {
   return (

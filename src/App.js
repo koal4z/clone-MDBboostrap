@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MDBRow, MDBCol, MDBBox } from 'mdbreact';
 
 import './assets/scss/style.scss';
@@ -7,6 +7,7 @@ import Navbar from './components/navbar';
 import Home from './components/home';
 
 function App() {
+  const [hide, setHide] = useState(false);
   const handlerScroll = () => {
     const yOffset = window.scrollY;
     const navbarEl = document.querySelector('.navcontainer');
@@ -17,6 +18,10 @@ function App() {
     }
   };
 
+  const handlerLeftSideBar = () => {
+    setHide(!hide);
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handlerScroll);
   }, []);
@@ -24,16 +29,26 @@ function App() {
   return (
     <MDBBox className="page h-auto" fluid="true">
       <MDBRow>
-        <div className="menuside__width z-depth-1-half position-fixed hide-xl">
-          <MDBBox tag="div" className="h-100 menuside__box">
+        <div
+          className={`menuside__width z-depth-1-half position-fixed ${
+            hide ? '' : 'slideleft'
+          }`}
+        >
+          <MDBBox tag="div" className="h-100 menuside__box ">
             <SideMenu />
           </MDBBox>
         </div>
+        <MDBBox
+          className={` ${hide ? 'fadein menuside__width--area' : ''}`}
+          onClick={handlerLeftSideBar}
+        >
+          {' '}
+        </MDBBox>
         <MDBCol className="container-right">
-          <MDBRow className="navcontainer .z-depth-3">
+          <MDBRow className="navcontainer z-depth-3">
             <MDBCol size="12">
               <MDBBox tag="div" className="h-100">
-                <Navbar />
+                <Navbar hide={hide} setHide={setHide} />
               </MDBBox>
             </MDBCol>
           </MDBRow>

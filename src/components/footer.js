@@ -18,7 +18,7 @@ const Footer = () => {
     <MDBBox className="footer__box">
       <MDBRow className="footer__box--inner">
         {footerDatas.map((data, idx) => (
-          <MDBCol className="col-3">
+          <MDBCol className="col-12 col-md-3">
             <MDBBox className={`footer__col--box-${idx}`}>
               <h4 className="footer__header">
                 {data.title}

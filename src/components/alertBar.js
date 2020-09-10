@@ -4,8 +4,7 @@ import { MDBBox, MDBBtn } from 'mdbreact';
 const AlertBar = () => {
   return (
     <MDBBox
-      display="flex"
-      className="alert alert-primary w-100 mb-4 container__alert"
+      className="alert alert-primary w-100 mb-4 container__alert hide-lg"
     >
       <MDBBox className="pl-1 pr-3">
         <i className="far fa-gem mx-2"></i>

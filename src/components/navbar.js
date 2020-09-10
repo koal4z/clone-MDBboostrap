@@ -18,26 +18,37 @@ import { BrowserRouter as Router } from 'react-router-dom';
 const Navbar = () => (
   <Router>
     <MDBNavbar color="white" expand="md" className="h-100 nav__box">
-      <MDBNavbarNav left>
-        <MDBNavItem active>
+      <MDBNavbarNav left className="nav__left">
+        <MDBNavItem className="hamburger__nav show-xl">
+          <MDBBox
+            className="nav__btn--icon mx-4 h-100"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            tag="span"
+          >
+            <MDBIcon className="hamburger__icon" icon="bars" />
+          </MDBBox>
+        </MDBNavItem>
+        <MDBNavItem active className="hide-sm">
           <MDBBtn color="info" className="nav__btn">
-            Getting Started
+            <span className="hide-md ">Getting Started</span>
             <MDBBox className="nav__btn--icon ml-2" tag="span">
               <i className="fas fa-download"> </i>
             </MDBBox>
           </MDBBtn>
         </MDBNavItem>
-        <MDBNavItem className="ml-2">
+        <MDBNavItem className="ml-2 hide-sm">
           <MDBBtn color="info" className="nav__btn">
-            Tutorial
+            <span className="hide-md">Tutorial</span>
             <MDBBox className="nav__btn--icon ml-2" tag="span">
               <MDBIcon icon="graduation-cap" />
             </MDBBox>
           </MDBBtn>
         </MDBNavItem>
-        <MDBNavItem className="ml-2">
+        <MDBNavItem className="ml-2 hide-sm">
           <MDBBtn color="info" className="nav__btn">
-            Pricing
+            <span className="hide-md">Pricing</span>
             <MDBBox className="nav__btn--icon ml-2" tag="span">
               <i className="fas fa-gem"> </i>
             </MDBBox>
@@ -58,14 +69,14 @@ const Navbar = () => (
             </MDBDropdownItem>
           </MDBDropdownMenu>
         </MDBDropdown>
-        <MDBNavItem className="mx-2">
+        <MDBNavItem className="mx-2 hide-md">
           <MDBNavLink to="#">
             <MDBIcon className="text-dark" icon="envelope" />
           </MDBNavLink>
         </MDBNavItem>
-        <MDBNavItem>
+        <MDBNavItem className="hide-md">
           <MDBNavLink to="#">
-            <MDBIcon className="mr-2 text-dark" icon="question-circle" />
+            <MDBIcon className="mr-2 text-dark " icon="question-circle" />
             <MDBBox tag="span" className="text-dark">
               Support
             </MDBBox>

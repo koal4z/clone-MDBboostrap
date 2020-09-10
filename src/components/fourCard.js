@@ -16,7 +16,7 @@ const FourCard = () => {
     <MDBRow className="mb-4">
       {datas.map((data, i) => {
         return (
-          <MDBCol key={i} className={`col-6 ${i % 2 === 0 ? 'pr-3' : 'pl-3'} mb-4`}>
+          <MDBCol key={i} className={`col-12 col-xl-6 col-lg-6 col-md-6 ${i % 2 === 0 ? 'pr-3' : 'pl-3'} mb-4`}>
             <MDBBox className="z-depth-1 mb-4">
               <MDBCardImage
                 src={data.image}
@@ -39,7 +39,7 @@ const FourCard = () => {
                   <u>{data.lastUpdate}</u>
                 </a>
               </MDBTypography>
-              <MDBBox display="flex" justifyContent="start" className="card__btnBox">
+              <MDBBox display="flex" className="card__btnBox">
                 <MDBBtn color={data.color} className="card__btnBox--btn">
                   Getting Start
                   <i className="fas fa-download ml-2"></i>

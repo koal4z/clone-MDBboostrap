@@ -20,7 +20,7 @@ const News = () => (
     </MDBBox>
     <MDBRow>
       {news.map((n, i) => (
-        <MDBCol className="col-4">
+        <MDBCol className="col-xl-4 col-12 pt-5 pt-xl-0">
           <MDBBox display="flex" className="flex-column" alignItems="center">
             <MDBBox className={`${setMargin(i)} z-depth-2`}>
               <a href="/#">

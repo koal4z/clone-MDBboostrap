@@ -24,7 +24,7 @@ function App() {
   return (
     <MDBBox className="page h-auto" fluid="true">
       <MDBRow>
-        <div className="menuside__width z-depth-1-half position-fixed">
+        <div className="menuside__width z-depth-1-half position-fixed hide-xl">
           <MDBBox tag="div" className="h-100 menuside__box">
             <SideMenu />
           </MDBBox>

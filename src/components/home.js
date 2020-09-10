@@ -16,9 +16,9 @@ import Copyright from './copyright';
 const Home = () => (
   <MDBBox className="blue-gradient dark header__container z-depth-1 w-100">
     <Header />
-    <MDBBox tag="main" className="container__background">
-      <AlertBar />
+    <MDBBox tag="main" className="container__background ">
       <MDBBox tag="section" className="container__page">
+        <AlertBar />
         <Release />
         <MDBBox className="px-3 mb-4">
           <FourCard />

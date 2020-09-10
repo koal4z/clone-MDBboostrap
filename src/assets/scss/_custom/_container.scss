@@ -2,9 +2,23 @@
   &__background {
     padding: 0 22rem;
     margin-top: 2rem;
+
+    @media (max-width: 1280px) {
+      padding: 0 15rem;
+    }
+
+    @media (max-width: 1199.98px) {
+      padding: 0 4rem;
+    }
+
+    @media (max-width: 767.98px) {
+      padding: 0 1rem;
+    }
   }
 
   &__alert {
+    display: flex;
+
     & > * > i {
       font-size: 4rem;
     }
@@ -25,8 +39,18 @@
   border: 0.2rem solid #7446ac;
 }
 
+.release__box--right {
+  @media (max-width: 1199.98px) {
+    text-align: center;
+  }
+}
+
 .release__text {
   font-size: 1.8rem;
+
+  @media (max-width: 1199.98px) {
+    text-align: center;
+  }
 }
 
 .icon__check {
@@ -60,6 +84,11 @@
     width: 90%;
     margin: 0 auto;
     flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 1280px) {
+      width: 100%;
+    }
 
     &--btn {
       font-size: 1.2rem !important;

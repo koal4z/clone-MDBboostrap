@@ -8,6 +8,20 @@
   margin-left: 4.5px;
 }
 
+.sponser__box--image {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+
+    & > .sponser__box--imageBox {
+      margin-top: 0.63rem;
+      flex: 1 0 33.3333%;
+    }
+  }
+}
+
 .sponser__image {
   max-height: 27px;
 }

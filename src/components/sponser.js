@@ -7,6 +7,7 @@ const Sponser = () => (
   <MDBBox className="border-top border-bottom sponser__box">
     <MDBBox display="inline-flex">
       <img
+        className="ml-sm-5 ml-xl-0"
         style={{ height: '15px', marginTop: '3px' }}
         src="https://mdbootstrap.com/wp-content/uploads/2018/06/logo-mdb-jquery-small.png"
         alt="logo"
@@ -17,13 +18,15 @@ const Sponser = () => (
         &nbsp;developers and designers
       </p>
     </MDBBox>
-    <MDBBox className="mt-4" display="flex" justifyContent="between">
+    <MDBBox className="mt-4 sponser__box--image">
       {sponsers.map((sponser) => (
-        <img
-          className="sponser__image"
-          src={sponser.src}
-          alt={`${sponser.alt} logo`}
-        />
+        <MDBBox className="sponser__box--imageBox">
+          <img
+            className="sponser__image"
+            src={sponser.src}
+            alt={`${sponser.alt} logo`}
+          />
+        </MDBBox>
       ))}
     </MDBBox>
   </MDBBox>

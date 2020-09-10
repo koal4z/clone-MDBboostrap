@@ -3,12 +3,12 @@ import { MDBBox, MDBIcon } from 'mdbreact';
 
 const Contact = () => (
   <MDBBox
-    className="contact__box"
+    className="contact__box "
     display="flex"
     alignItems="center"
     justifyContent="center"
   >
-    <MDBBox className="contact__button--box">
+    <MDBBox className="contact__button--box hide-md">
       <a href="/#" className="contact__btn--items">
         Join our newsletter
         <MDBIcon className="ml-3" icon="envelope" />

@@ -9,7 +9,7 @@ const Resource = () => (
     <h1 className="resource__header mb-5">Most Porular Resource</h1>
     <MDBRow>
       {resources.slice(0, 3).map((n, i) => (
-        <MDBCol className="col-4">
+        <MDBCol className={`col-xl-4 col-12 ${i === 0 ? 'col-md-12' : 'col-md-6'}`}>
           <MDBBox display="flex" className="flex-column" alignItems="center">
             <MDBBox className={`${setMargin(i)} z-depth-2`}>
               <a href="/#">
@@ -30,7 +30,7 @@ const Resource = () => (
     </MDBRow>
     <MDBRow>
       {resources.slice(3, 6).map((n, i) => (
-        <MDBCol className="col-4">
+        <MDBCol className={`col-xl-4 col-12 ${i === 0 ? 'col-md-12' : 'col-md-6'}`}>
           <MDBBox display="flex" className="flex-column" alignItems="center">
             <MDBBox className={`${setMargin(i)} z-depth-2`}>
               <a href="/#">
@@ -51,7 +51,7 @@ const Resource = () => (
     </MDBRow>
     <MDBRow>
       {resources.slice(6, 9).map((n, i) => (
-        <MDBCol className="col-4">
+        <MDBCol className={`col-xl-4 col-12 ${i === 0 ? 'col-md-12' : 'col-md-6'}`}>
           <MDBBox display="flex" className="flex-column" alignItems="center">
             <MDBBox className={`${setMargin(i)} z-depth-2`}>
               <a href="/#">
@@ -72,7 +72,7 @@ const Resource = () => (
     </MDBRow>
     <MDBRow>
       {resources.slice(9).map((n, i) => (
-        <MDBCol className="col-4">
+        <MDBCol className={`col-xl-4 col-12 ${i === 0 ? 'col-md-12' : 'col-md-6'}`}>
           <MDBBox display="flex" className="flex-column" alignItems="center">
             <MDBBox className={`${setMargin(i)} z-depth-2`}>
               <a href="/#">

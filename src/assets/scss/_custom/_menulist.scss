@@ -8,6 +8,7 @@
     cursor: pointer;
     transition: all 0.2s cubic-bezier(1, 0.26, 0.64, 0.86);
     user-select: none;
+    overflow: hidden;
 
     &:hover {
       background-color: rgba($color-border-line, 0.1) !important;
@@ -32,6 +33,7 @@
     text-transform: capitalize;
     transition: all 0.26s cubic-bezier(1, 0.26, 0.64, 0.86);
     user-select: none;
+    display: block;
 
     &:hover {
       background-color: rgba($color-white, 0.25);

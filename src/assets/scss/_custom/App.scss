@@ -4,6 +4,10 @@
 
 .container-right {
   padding-left: 21.8rem !important;
+
+  @media (max-width: 1280px) {
+    padding-left: 0 !important;
+  }
 }
 
 .navcontainer {
@@ -12,6 +16,10 @@
   width: calc(100% - 21.8rem);
   z-index: 99;
   transition: height 0.64s linear;
+
+  @media (max-width: 1280px) {
+    width: 100%;
+  }
 }
 
 .decrease_nav {

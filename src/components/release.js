@@ -16,11 +16,12 @@ const Release = () => (
     className="release__box block-example py-4 px-3 rounded  mb-4"
   >
     <MDBRow>
-      <MDBCol className="col-lg-12 col-xl-6">
+      <MDBCol className="col-12 col-xl-6 col-lg-12 col-md-12 col-sm-12">
         <MDBTypography tag="h2" className="text-center h1 my-3">
           <strong>
-            MDB 5<u>stable</u>
-            version released
+            MDB 5 &nbsp;
+            <u>stable</u>
+            &nbsp;released
           </strong>
           <MDBCardImage
             src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/_main/assets/mdb5-about-v2.jpg"
@@ -29,8 +30,8 @@ const Release = () => (
           ></MDBCardImage>
         </MDBTypography>
       </MDBCol>
-      <MDBCol className="col-lg-12 col-xl-6 py-4">
-        <MDBBox className="pl-4" display="block">
+      <MDBCol className="col-12 col-xl-6 col-lg-12 col-md-12 col-sm-12 py-4 release__box--right">
+        <MDBBox className="pl-md-4 pl-sm-4" display="block">
           <MDBTypography className="p release__text">
             <span className="pl-3 pr-3 ">
               <MDBIcon className="icon__check" icon="check" />

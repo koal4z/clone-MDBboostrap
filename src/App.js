@@ -44,16 +44,16 @@ function App() {
         >
           {' '}
         </MDBBox>
-        <MDBCol className="container-right">
+        <MDBCol className="container-right clearPadMar">
           <MDBRow className="navcontainer z-depth-3">
-            <MDBCol size="12">
+            <MDBCol size="12" className="clearPadMar">
               <MDBBox tag="div" className="h-100">
                 <Navbar hide={hide} setHide={setHide} />
               </MDBBox>
             </MDBCol>
           </MDBRow>
           <MDBRow>
-            <MDBCol size="12">
+            <MDBCol size="12" className="clearPadMar">
               <MDBBox tag="div" className="contentcontainer">
                 <Home />
               </MDBBox>

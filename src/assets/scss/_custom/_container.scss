@@ -16,6 +16,14 @@
     }
   }
 
+  &__page {
+    min-width: 800px;
+
+    @media (max-width: 801px) {
+      min-width: auto;
+    }
+  }
+
   &__alert {
     display: flex;
 

@@ -16,7 +16,12 @@ const FourCard = () => {
     <MDBRow className="mb-4">
       {datas.map((data, i) => {
         return (
-          <MDBCol key={i} className={`col-12 col-xl-6 col-lg-6 col-md-6 ${i % 2 === 0 ? 'pr-3' : 'pl-3'} mb-4`}>
+          <MDBCol
+            key={i}
+            className={`col-12 col-xl-6 col-lg-6 col-md-6 ${
+              i % 2 === 0 ? 'pr-3' : 'pl-3'
+            } mb-4`}
+          >
             <MDBBox className="z-depth-1 mb-4">
               <MDBCardImage
                 src={data.image}
@@ -26,15 +31,16 @@ const FourCard = () => {
             </MDBBox>
             <MDBBox>
               <MDBTypography tag="h2" className="card__typo--head mb-2">
-                <strong>{data.header}</strong>{' '}
+                <strong>{data.header}</strong>
+                &nbsp;
                 {i === 0 ? '(default Bootstrap version)' : ''}
               </MDBTypography>
               <MDBTypography tag="p" className="card__typo--detail">
-                Version:{' '}
+                Version:&nbsp;
                 <a href="/#" className="card__typo--link">
                   <u>{data.version}</u>
-                </a>{' '}
-                | Last Update:{' '}
+                </a>
+                &nbsp; | Last Update:&nbsp;
                 <a href="/#" className="card__typo--link">
                   <u>{data.lastUpdate}</u>
                 </a>
